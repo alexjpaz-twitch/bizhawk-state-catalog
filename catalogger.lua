@@ -4,13 +4,13 @@ local hotkey = "B"
 
 print("Listening for hotkey '" .. hotkey .. "'")
 
-function screenshotAndSave()	
-	local prefix = ".\\catalog\\rawdata\\"  
+function screenshotAndSave()
+	local prefix = ".\\catalog\\rawdata\\"
 	.. emu.getsystemid()
 	.. '__'
 	.. gameinfo.getromname()
 	.. '__'
-	.. gameinfo.getromhash() 
+	.. gameinfo.getromhash()
 	.. '__'
 	.. os.time(os.date("!*t"))
 
@@ -42,8 +42,6 @@ while true do
 
 	if table[hotkey] then
 		screenshotAndSave()
-
-	
 	end
 	emu.frameadvance()
 end

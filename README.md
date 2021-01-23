@@ -1,0 +1,1 @@
+# bizhawk-state-catalog
